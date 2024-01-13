@@ -6,8 +6,8 @@ let boardHeight = 640;
 let context;
 
 //cake
-let cakeWidth = 36; //width/height ratio = 408/228 = 17/12
-let cakeHeight = 51;
+let cakeWidth = 25; //width/height ratio = 408/228 = 17/12
+let cakeHeight = 45;
 let cakeX = boardWidth/8;
 let cakeY = boardHeight/2;
 let cakeImg;
@@ -51,7 +51,7 @@ window.onload = function() {
     cakeImg = new Image();''
     
     //Thay đổi avata
-    cakeImg.src = "./cake.png";
+    cakeImg.src = "./download.png";
     cakeImg.onload = function() {
         context.drawImage(cakeImg, cake.x, cake.y, cake.width, cake.height);
     }
