@@ -60,7 +60,7 @@ window.onload = function() {
     topPipeImg.src = "./Pillartop.png";
 
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "./Pillarbot.png";
+    bottomPipeImg.src = "./bot.png";
 
     requestAnimationFrame(update);
     setInterval(placePipes, 1500); //every 1.5 seconds
