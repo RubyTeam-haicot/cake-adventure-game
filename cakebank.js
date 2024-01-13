@@ -21,8 +21,8 @@ let cake = {
 
 //pipes
 let pipeArray = [];
-let pipeWidth = 64; //width/height ratio = 384/3072 = 1/8
-let pipeHeight = 512;
+let pipeWidth = 80; //width/height ratio = 800/2000 = 2/5
+let pipeHeight = 200;
 let pipeX = boardWidth;
 let pipeY = 0;
 
@@ -60,7 +60,7 @@ window.onload = function() {
     topPipeImg.src = "./Pillartop.png";
 
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "./bot.png";
+    bottomPipeImg.src = "./Pillarbot.png";
 
     requestAnimationFrame(update);
     setInterval(placePipes, 1500); //every 1.5 seconds
