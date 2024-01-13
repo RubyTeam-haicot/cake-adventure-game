@@ -6,5 +6,5 @@ body {
 #board {
     /* background-color: skyblue; */
     background-image: url('Background game.png');
-    
+    background-size: cover; /* Đảm bảo hình ảnh sẽ che phủ toàn bộ phần nền */
 }
