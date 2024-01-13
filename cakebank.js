@@ -6,8 +6,8 @@ let boardHeight = 640;
 let context;
 
 //cake
-let cakeWidth = 44.3; //width/height ratio = 408/228 = 17/12
-let cakeHeight = 24.9;
+let cakeWidth = 24.9; //width/height ratio = 408/228 = 17/12
+let cakeHeight = 44.3;
 let cakeX = boardWidth/8;
 let cakeY = boardHeight/2;
 let cakeImg;
