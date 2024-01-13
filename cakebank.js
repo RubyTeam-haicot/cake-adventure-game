@@ -51,7 +51,7 @@ window.onload = function() {
     cakeImg = new Image();''
     
     //Thay đổi avata
-    cakeImg.src = "./download.png";
+    cakeImg.src = "./cake.png";
     cakeImg.onload = function() {
         context.drawImage(cakeImg, cake.x, cake.y, cake.width, cake.height);
     }
