@@ -57,10 +57,10 @@ window.onload = function() {
     }
 
     topPipeImg = new Image();
-    topPipeImg.src = "./Pillar top.png";
+    topPipeImg.src = "./Pillartop.png";
 
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "./Pillar bot.png";
+    bottomPipeImg.src = "./Pillarbot.png";
 
     requestAnimationFrame(update);
     setInterval(placePipes, 1500); //every 1.5 seconds
