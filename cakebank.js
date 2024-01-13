@@ -21,8 +21,8 @@ let cake = {
 
 //pipes
 let pipeArray = [];
-let pipeWidth = 80; //width/height ratio = 800/2000 = 2/5
-let pipeHeight = 500;
+let pipeWidth = 300; //width/height ratio = 800/2000 = 2/5
+let pipeHeight = 200;
 let pipeX = boardWidth;
 let pipeY = 0;
 
