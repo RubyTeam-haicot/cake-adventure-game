@@ -21,8 +21,8 @@ let cake = {
 
 //pipes
 let pipeArray = [];
-let pipeWidth = 64; //width/height ratio = 384/3072 = 1/8
-let pipeHeight = 512;
+let pipeWidth = 48;  // Adjusted width
+let pipeHeight = 384; // Adjusted height
 let pipeX = boardWidth;
 let pipeY = 0;
 
@@ -120,29 +120,26 @@ function placePipes() {
         return;
     }
 
-    //(0-1) * pipeHeight/2.
-    // 0 -> -128 (pipeHeight/4)
-    // 1 -> -128 - 256 (pipeHeight/4 - pipeHeight/2) = -3/4 pipeHeight
-    let randomPipeY = pipeY - pipeHeight/4 - Math.random()*(pipeHeight/2);
-    let openingSpace = board.height/4;
+    let randomPipeY = pipeY - pipeHeight / 4 - Math.random() * (pipeHeight / 2);
+    let openingSpace = board.height / 4;
 
     let topPipe = {
-        img : topPipeImg,
-        x : pipeX,
-        y : randomPipeY,
-        width : pipeWidth,
-        height : pipeHeight,
-        passed : false
+        img: topPipeImg,
+        x: pipeX,
+        y: randomPipeY,
+        width: pipeWidth,
+        height: pipeHeight,
+        passed: false
     }
     pipeArray.push(topPipe);
 
     let bottomPipe = {
-        img : bottomPipeImg,
-        x : pipeX,
-        y : randomPipeY + pipeHeight + openingSpace,
-        width : pipeWidth,
-        height : pipeHeight,
-        passed : false
+        img: bottomPipeImg,
+        x: pipeX,
+        y: randomPipeY + pipeHeight + openingSpace,
+        width: pipeWidth,
+        height: pipeHeight,
+        passed: false
     }
     pipeArray.push(bottomPipe);
 }
